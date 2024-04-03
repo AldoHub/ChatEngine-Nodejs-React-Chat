@@ -15,6 +15,7 @@ const Auth = (props) => {
             username: value
         })
         .then((response) => {
+            //pass the data to the parent component in order to render the chat
             props.onAuth({
                 ...response.data,
                 secret: value
